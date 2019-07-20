@@ -1,5 +1,7 @@
 # Snippets in R
 
+* [Rnet - networks in R](https://github.com/bavla/Rnet/tree/master/R)
+
 ## Generating node numbers for Pajek
 
 ```
