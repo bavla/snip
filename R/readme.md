@@ -8,6 +8,24 @@
 > cat(paste("*vertices ",n),s,sep="\n",file=out)
 > close(out)
 ```
+## Saving R partition or vector as a Pajek file
+
+Vector  M  contains a partition and vector  mode  its classes (legend)
+```
+clu <- file("Mode.clu","w")
+cat("%",file=clu); n <- length(M)
+for(i in 1:length(mode)) cat(" ",i,mode[i],file=clu)
+cat("\n*vertices ",n,"\n",file=clu)
+for(v in 1:n) cat(M[v],"\n",file=clu)
+close(clu) 
+```
+Vector P contains a numerical property (attribute)
+```
+vec <- file("P.vec","w"); n <- length(P)
+cat("*vertices ",n,"\n",file=clu) 
+for(v in 1:n) cat(P[v],"\n",file=clu)
+close(clu) 
+```
 
 ## Saving R data frame (network) as a Pajek NET file
 
