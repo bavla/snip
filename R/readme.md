@@ -58,3 +58,7 @@ df2Pajek <- function(df,netfile){
   close(net)
 }
 ```
+
+## Saving igraph network in Pajek NET file
+
+[wiki](http://vladowiki.fmf.uni-lj.si/doku.php?id=ru:hse:rnet18:crnet1#saving_igraph_network_as_pajek_project_file)
