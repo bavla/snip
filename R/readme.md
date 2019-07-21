@@ -24,9 +24,9 @@ close(clu)
 Vector P contains a numerical property (attribute)
 ```
 vec <- file("P.vec","w"); n <- length(P)
-cat("*vertices ",n,"\n",file=clu) 
-for(v in 1:n) cat(P[v],"\n",file=clu)
-close(clu) 
+cat("*vertices ",n,"\n",file=vec) 
+for(v in 1:n) cat(P[v],"\n",file=vec)
+close(vec) 
 ```
 
 ## Saving R data frame (network) as a Pajek NET file
